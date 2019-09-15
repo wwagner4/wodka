@@ -1,0 +1,18 @@
+
+# Ball flying
+java -cp modeler.jar:nanoxml.jar:racer.jar:simulator.jar racer.RaceFrame http://wodka.sourceforge.net/race_hist_11_166.xml
+
+# Triangle loosing
+java -cp modeler.jar:nanoxml.jar:racer.jar:simulator.jar racer.RaceFrame http://wodka.sourceforge.net/race_hist_14_201.xml
+
+# Triangle sprinter
+java -cp modeler.jar:nanoxml.jar:racer.jar:simulator.jar racer.RaceFrame http://wodka.sourceforge.net/race_hist_16_166.xml
+
+# Lance sprinter
+java -cp modeler.jar:nanoxml.jar:racer.jar:simulator.jar racer.RaceFrame http://wodka.sourceforge.net/race_hist_20_201.xml
+
+# Ball walker
+java -cp modeler.jar:nanoxml.jar:racer.jar:simulator.jar racer.RaceFrame http://wodka.sourceforge.net/race_hist_32_166.xml
+
+# Triangle crawler
+java -cp modeler.jar:nanoxml.jar:racer.jar:simulator.jar racer.RaceFrame http://wodka.sourceforge.net/race_hist_5_201.xml
