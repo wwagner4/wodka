@@ -1,0 +1,6 @@
+To build a windows installation follow the steps below:
+1. Run build_win from ant.
+2. Renemae the version in the wodka.iss file.
+3. Start the inno compile with the wodka.iss file 
+4. Compile the iss file with inno.
+5. The Result will be the wodka_setup.exe

@@ -1,0 +1,347 @@
+
+<html>
+    <head>
+        <title>wodka documentation</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+    </head>
+    <body>
+        <table width="98%">
+            <tr>
+                <td class="title" background="images/flascherl_verfl_over.jpg">
+                    <img src="images/flascherl_verfl_over.jpg" align="middle"/>&nbsp;documentation</td>
+            </tr>
+        </table>
+        <table width="98%">
+            <tr>
+                <td>
+                    <a href="index.html#top">home</a>
+                </td>
+                <td>
+                    <a href="doc.html#top">documentation</a>
+                </td>
+                <td>
+                    <a href="dev.html#top">development</a>
+                </td>
+                <td>
+                    <a href="results.html#top">results</a>
+                </td>
+            </tr>
+        </table>
+        <table width="98%">
+            <tr>
+                <td valign="top" class="title">
+                    <table>
+                        <tr>
+                            <td>
+                                <a href="doc.html#breeder-manual">breeder</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="doc.html#genolab-manual">genolab</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="doc.html#javadoc">javadoc</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="doc.html#source">source</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="doc.html#cvs">cvs</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="doc.html#questions">questions</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="doc.html#glossar">glossary</a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table>
+                        <tr>
+                            <td>
+                                <a name="breeder-manual"></a>
+                                <h1>breeder manual</h1>
+                                <h2>introduction</h2>
+                                <p>The breeder allows you to breed soda robots from scratch by applying a genetic algorithm (GA). The parameters of that GA may 
+                                be configured. The results of the breeding process can be saved to resume breeding at a later time or exported to be viewed in 
+                                the soda constructor or racer.
+                                </p>
+                                <p>
+                                    <a href="Breeder.jnlp">start</a>
+                                </p>
+                                <p>
+                                    <a href="images/sshotBreeder.png">screenshot</a>
+                                </p>
+                                <h2>commands</h2>
+                                <table>
+                                    <tr>
+                                        <td>file/new</td>
+                                        <td>Creates a new GA. The results of the previous GA are lost if you did not save or export them.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>file/edit</td>
+                                        <td>Changes the parameters of the current GA. The results of the current GA are lost if you did not save or export them.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>file/load</td>
+                                        <td>Loads the parameters and individuals of a previous saved GA. You start breeding at the same point where you saved last time.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>file/save</td>
+                                        <td>Saves all individuals and parameters of the current GA. From older populations only the fittest individual is saved to save disk space and
+                                        to shorten the time the breeder needs to save a GA.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>file/export</td>
+                                        <td>Exports the current GA as XML files. These files can be used to be imported to the soda racer or to the soda constructor.
+                                        You may also use the export function if you like to publish your models in one of the sodarace forums.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>control/start</td>
+                                        <td>Starts the current GA. Depending on what racer you have selected the sodarace application has to be started before.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>control/stop</td>
+                                        <td>Stops execution of the current GA.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>view/progress</td>
+                                        <td>Opens the wodka progress view. There you can see how your models have changed during execution.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>view/soda racer</td>
+                                        <td>Starts the soda racer using java webstart. This feature does currently only work on windows and if you have installed 
+                                        java webstart on the default location.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>view/soda constructor</td>
+                                        <td>Starts the soda constructor using java webstart. This feature does currently only work on windows and if you have installed 
+                                        java webstart on the default location.</td>
+                                    </tr>
+                                </table>
+                                <h2>buttons</h2>
+                                <p>Some of the commands of the menu are also available as buttons. The buttons have no extra functionality to the menu items.</p>
+                                <p>The info (i) toggle button opens/closes the info view. There you can see the current parameters of the actual GA.</p>
+                                <p>&nbsp;</p>
+                                <a href="#top">top</a>
+                            </td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <td>
+                                <a name="genolab-manual"></a>
+                                <h1>genolab manual</h1>
+                                <p>The wodka genotype laboratory</p>
+                                <h2>introduction</h2>
+                                <p>The genolab allows you to figure out what kind of random models can be created by the different genotypes
+				offered by wodka. The random generated models are used to start breeding creatures from scratch. The genolab 
+				gives you an idea what structures are possible changing the parameters of the different genotypes.
+                                </p>
+                                <p>
+                                    <a href="Genolab.jnlp">start</a>
+                                </p>
+                                <p>
+                                    <a href="images/sshotGenoLab1.png">screenshot</a>
+                                </p>
+                                <h2>commands</h2>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <img alt="configure icon" src="images/EditBook.png"></td>
+                                            <td>configure</td>
+                                            <td>Opens a configuration dialog that allows you to configure the parameters of the current genotype
+					or to select a new genotype.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <img alt="new icon" src="images/NewSheet.png"></td>
+                                                <td>new</td>
+                                                <td>Creates a new random genotype and the appertaining model. Model and genotype are displayed on different panels.</td>
+                                            </tr>
+                                        </table>
+                                        <h2>panels</h2>
+                                        <table>
+                                            <tr>
+                                                <td>model</td>
+                                                <td>Shows the model represented by the genome. The red model is created directly from the genome. The 
+					yellow model is the biggest connected set of masses.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>genome</td>
+                                                <td>Shows a string representation of the genome.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>info</td>
+                                                <td>Overview of all parameters of the current language.</td>
+                                            </tr>
+                                        </table>
+                                        <p>&nbsp;</p>
+                                        <a href="#top">top</a>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <h1>technical</h1>
+                                        <a name="javadoc"></a>
+                                        <h2>javadoc</h2>
+                                        <p>
+                                            <a href="javadoc/index.html">Click here</a> to browse through the wodka API documentation.</p>
+                                        <a name="source"></a>
+                                        <h2>source</h2>
+                                        <p>
+                                            <a href="j2h/index.html">Click here</a> to browse through the wodka source code.</p>
+                                        <a name="cvs"></a>
+                                        <h2>cvs</h2>
+                                        <p>The source code of wodka is maintained in a cvs repository of the sourceforge 
+                    cvs server. <a href="http://cvs.sourceforge.net/viewcvs.py/wodka/src/">Click here</a> to browse the source and all its recent changes.</p>
+                                        <p>&nbsp;</p>
+                                        <a href="#top">top</a>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <a name="questions"></a>
+                                        <h1>theory - questions</h1>
+                                        <p>In this chapter I ask questions, that occurred before or during the 
+                    wodka project. Then I answer the questions to illustrate the solutions that where chosen 
+                    in this project.</p>
+                                        <p>Q: What could be the phenotype of an arbitrary 2D structure in general?</p>
+                                        <p>A: It must be some kind of sequence on which genetic operations 
+                    can be applied, and it must be possible to generate exactly one structure from 
+                    this sequence. In eather words: There must be non-ambiguous mapping from the sequence to
+                    the structure. Another important requirement of this mapping is, that it must be 
+                    local. This means that sequences that do not differ a lot should lead to structures that
+	                does not differ a lot ether.</p>
+                                        <p>Q: What kind of sequences where chosen for wodka?</p>
+                                        <p>A: In wodka I have chosen the Principe of building languages.
+                    A language is a set of commands that might have parameters. A sequence of commands represent
+                    a program of this language.
+                    For each language exists an interpreter that manages the mapping from a program to a structure.</p>
+                                        <p>Q: What kind of languages are used in wodka?</p>
+                                        <p>A: At the moment two kinds of languages are used. An assembler like
+                    language and a group of languages that use a command set much like the well known turtle
+                    graphics.</p>
+                                        <p>Q: How does the assembler like language look like?</p>
+                                        <p>It consists from two commands. AddMass(x,y) and AddSpring(i,j). 
+                        AddMass adds a mass at the position (x,y) to the structure. AddSpring adds a spring from
+                        the i-th mass to the j-mass.</p>
+                                        <p>Q: What means mass and spring in this context?</p>
+                                        <p>A: The expressions mass and spring are taken form sodarace. In general
+                    they mean node and connection.</p>
+                                        <p>Q: What do the turtle languages look like?</p>
+                                        <p>A: They consist of the commands PenUp(), PenDown(), Forward(l) and Turn(a).
+                    These commands control a pen that draws a structure. Forward draws a line of length l if 
+                    the pen is currently down. PenUp and PenDown lower and rise the pen. Turn turns the 
+                    drawing direction of the pen for a certain angle. At the moment turtle languages
+                    are implemented that use different grids width. </p>
+                                        <p>Q: How can the genetic algorithm be tested as long as no soda races are available?</p>
+                                        <p>A: I implemented a set of racers that favorite structures that are 
+                    alike a certain structure. Using these racers show a progress from random structures
+                    to structures that are more and more like the pattern structure.</p>
+                                        <p>Q: How does the GA perform ?</p>
+                                        <p>A: It performs well in generating simple structures like squares but does not really
+                    find complex structures. I am not sure if this is the fault of the GA. The results show a strong 
+                    dependency of how the fitness function is defined. Improperly designed fitness functions 
+                    direct the GA into local maximums where it gets stuck.</p>
+                                        <p>&nbsp;</p>
+                                        <a href="#top">top</a>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <a name="languages"></a>
+                                        <h1>theory - building languages</h1>
+                                        <p>The building language is a genotype for soda robots. 
+                    It consists of a sequence of commands called a program. On such a program genetic operations can be applied.
+                    For every building language must also exist an interpreter. Evaluation of a program on that
+                    interpretor generates a model that can be tested for fitness.</p>
+
+                                        <h3>recombination</h3>
+                                        <p>Recombination of two programs means to take a random length sequence of commands from from
+                    the first. Then switch to the same position of the second program and take also a random
+                    length sequence of commands. Appending those pieces of programs builds a new program that
+                    represents a new model.</p>
+                                        <p>
+                                            <a href="Recombine.jnlp">Click here</a> to see how it works</p>
+
+                                        <h3>assembler</h3>
+                                        <p>Assembler is an assembler like building language consisting of two commands. 
+                    AddMass(x,y) and AddSpring(indexFromMass,indexToMass). A sequence of these two commands 
+                    may define a wodka model if it is evaluated by an interpreter.</p>
+                                        <h3>turtle</h3>
+                                        <p>The turtle building language exists of the commands Forward(l), Turn(a), PenUp() and PenDown().
+                    Evaluation always starts in the middle of a building area with the turtle orientated up (north). 
+                    Forward generates Two masses and a muscle of length l if the pen is down. 
+                    The turtle is moved to the endpoint of the muscle. If the pen is down the turtle just 
+                    walks around until the next PenDown() command. Turn turns the turtle for a certain
+                    angle without moving it. PenDown -Up activates/deactivates the construction of muscles.</p>
+                                        <p>&nbsp;</p>
+                                        <a href="#top">top</a>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <a name="glossar"></a>
+                                        <h1>theory - glossary</h1>
+
+                                        <h3>phenotype models</h3>
+                                        <p>Models are representation of soda robots. They build from masses, muscles and general parameters. 
+                    Masses are defined by 
+                    their absolute position inside a square area. The hight and width of this area 
+                    are currently 256 pixel. Muscles are defined as connections between 
+                    masses and parameters. The length is defined by the distance of the endpoint masses.
+                    The general parameters are amplitude and phase known from the soda constructor.</p>
+                                        <p>The role of the model in wodka is to be the phenotype that can be tested for fitness 
+                    on the soda race application.</p>
+
+                                        <h3>genotype</h3>
+                                        <p>In order to run a genetic algorithm you have to have a so called genotype 
+                    that has the capability build a phenotype by means of a mapping function. Like
+                    living creatures have their genes from which new creatures can 'build'.</p>
+                                        <p>Another important capability of genotypes is that the genetic operations crossover and mutation can be applied
+                    on them.</p>
+
+                                        <h3>genetic algorithm</h3>
+                                        <p>Breeding models requires a genetic algorithm (GA). The GA contains a 
+                    population of genotypes. From each of these genotypes one model (phenotype) is generated and tested for
+                    its fitness. That means it has to run a race on the soda race application. The fitness is a value that indicates
+                    how fast it reaches the end of the race or how many percent it finished.
+                    The test of models result in a fitnesses for each member of the population.</p>
+                                        <p>After testing the models, selection is applied to the population to generate
+                    a new population. During the selection process the genetic operations can be applied to
+                    form new individuals. Generally the fittest are selected to form a new population.</p>
+                                        <p>With that new population the process starts from the beginning.</p>
+
+                                        <p>&nbsp;</p>
+                                        <a href="#top">top</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </body>
+        </html>

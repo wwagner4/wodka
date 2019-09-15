@@ -1,0 +1,130 @@
+body {
+    font-family:'Lucida Sans', 'Arial', sans-serif;
+    background-color: #000000;
+    color: #fdffe3;
+}
+#div_top_left {
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:250px;
+    height:200px;
+}
+#div_top_right {
+    position:absolute;
+    top:0px;
+    left:250px;
+    height:200px;
+}
+#div_bottom_left {
+    position:absolute;
+    left:10px;
+    top:200px;
+    width:230px;
+}
+#div_bottom_right {
+    position:absolute;
+    top:200px;
+    left:260px;
+    padding-right:50px;
+}
+#logo {
+    position:absolute;
+    right:10px;
+    bottom: 10px;
+    text-align:left;
+    width:auto;
+}
+#div_top_right_content {
+    position:absolute;
+    bottom: 10px;
+}
+#title {
+    font-size:55px;
+    font-weight:bold;
+    white-space:nowrap;
+}
+#pagetitle {
+    font-size:20px;
+    width:100%;
+    padding:0px;
+    margin-bottom:10px;
+}
+#table_top_menu {
+    margin-left: 0px;
+}
+#table_left_menu {
+    margin-left: 0px;
+    width:100%;
+}
+#p_top_menu {
+	margin-left:0px;
+	padding-left:0px;
+}
+td.top_menu {
+    font-size:15px;
+    padding-right:30px;
+    padding-left:2px;
+    padding-top:2px;
+    padding-bottom:5px;
+    border-style:solid;
+    border-width:1px;
+    border-right-width:0px;
+    border-left-width:0px;
+    border-color:#faffab;
+    white-space:nowrap;
+}
+td.left_menu {
+    text-align: right;
+    font-size:15px;
+    padding-right:2px;
+    padding-bottom:5px;
+    border-style:solid;
+    border-width:1px;
+    border-right-width:0px;
+    border-left-width:0px;
+    border-color:#faffab;
+}
+h1 {
+    font-size: 20px;
+    font-weight: bold;
+}
+p {
+    font-size: 15px;
+    margin-left: 20px;
+}
+p.top {
+    font-size: 10px;
+}
+table {
+    margin-left: 20px;
+    width: 80%;
+    border-collapse: collapse;
+}    
+td {
+    margin-left:0px;
+    font-size:15px;
+    border-style:solid;
+    border-width:1px;
+    border-color:#faffab;
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:3px;
+    padding-bottom:3px;
+}
+th {
+    font-size:15px;
+    font-weight: bold;
+}
+li {
+    font-size: 15px;
+}
+a:visited {
+    color:#faffab;
+    text-decoration: none;
+}
+a:link {
+    color:#faffab;
+    text-decoration: none;
+}
+

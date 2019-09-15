@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jnlp codebase="http://wodka.sourceforge.net" href="Breeder.jnlp">
+    <information>
+        <title>wodka GA Breeder</title>
+        <vendor>wolfgang wagner</vendor>
+        <description>A breeding programm for wodka models.</description>
+        <icon href="bottle.jpg"/>
+        <homepage href="http://wodka.sourceforge.net"/>
+        <offline-allowed/>
+    </information>
+    <security>
+        <all-permissions/>
+    </security>
+    <resources>
+        <j2se version="1.4+"/>
+        <jar href="wodka.jar"/>
+        <jar href="jdom.jar"/>
+        <jar href="log4j.jar"/>
+        <jar href="xerces.jar"/>
+        <jar href="javalobby.jar"/>
+        <jar href="Mins.jar"/>
+        <jar href="wwan-commons-param.jar"/>
+        <jar href="commons-lang-2.0.jar"/>
+        <jar href="easysoda.jar"/>
+    </resources>
+    <application-desc main-class="wodka.view.BreederFrame"/>
+</jnlp>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<race racer="racer.Racer">
+    <timeout value="10000" />
+    <terrain filter="racer.FilterFixedBars">
+        <model>
+            <comment />
+            <container width="651" height="422" />
+            <environment gravity="0.3" friction="0.05" springyness="0.2" />
+            <collisions surface_friction="0.1" surface_reflection="-0.75" />
+            <wave amplitude="0.5" phase="0.0" speed="0.01" />
+            <settings gravitydirection="down" wavedirection="forward" autoreverse="on" />
+            <nodes>
+                <node id="n0" x="0.0" y="10.0" />
+                <node id="n1" x="651.0" y="10.0" />
+            </nodes>
+            <links>
+                <fixedbar a="n0" b="n1" />
+            </links>
+        </model>
+    </terrain>
+    <race_constraints>
+        <environment gravity="CONTENDER" friction="CONTENDER" springyness="CONTENDER" />
+        <collisions surface_friction="CONTENDER" surface_reflection="CONTENDER" />
+        <wave amplitude="CONTENDER" phase="CONTENDER" speed="CONTENDER" />
+        <settings gravitydirection="CONTENDER" wavedirection="CONTENDER" autoreverse="CONTENDER" />
+    </race_constraints>
+    <contenders filter="racer.FilterScaledSquare">
+        <contender>
+            <model>
+                <comment>wodka gen=272 pos=1</comment>
+                <container width="651" height="422" />
+                <environment gravity="1.092341" friction="0.558905" springyness="0.360096" />
+                <collisions surface_friction="0.1" surface_reflection="-0.75" />
+                <wave amplitude="0.80258" phase="0.090899" speed="0.045271" />
+                <settings gravitydirection="down" wavedirection="forward" autoreverse="on" />
+                <nodes>
+                    <mass id="m27" x="256" y="66" vx="0" vy="0" />
+                    <mass id="m28" x="253" y="66" vx="0" vy="0" />
+                    <mass id="m29" x="231" y="99" vx="0" vy="0" />
+                    <mass id="m30" x="209" y="132" vx="0" vy="0" />
+                    <mass id="m31" x="242" y="88" vx="0" vy="0" />
+                    <mass id="m33" x="253" y="88" vx="0" vy="0" />
+                    <mass id="m35" x="220" y="66" vx="0" vy="0" />
+                </nodes>
+                <links>
+                    <muscle amplitude="0.475239" phase="0.057874" a="m27" b="m28" restlength="3" />
+                    <muscle amplitude="0.946042" phase="0.117521" a="m28" b="m29" restlength="39.661064" />
+                    <muscle amplitude="0.2686" phase="0.771832" a="m29" b="m30" restlength="39.661064" />
+                    <muscle amplitude="0.876706" phase="0.008016" a="m30" b="m31" restlength="55" />
+                    <muscle amplitude="0.351053" phase="0.802713" a="m29" b="m33" restlength="24.596748" />
+                    <muscle amplitude="0.786004" phase="0.542574" a="m33" b="m35" restlength="39.661064" />
+                </links>
+            </model>
+            <result frames="-1.0" />
+        </contender>
+    </contenders>
+</race>
+

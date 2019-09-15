@@ -1,0 +1,76 @@
+v0.23
+-Removed the JAVA_HOME environment variable.
+-Incremental TerrainManager works with the GA terrain from the soda ai forum.  
+-ZooBuilder uses the CategorizedInfo interface. -> Changes in the GA are automatically visible in the GUI and on the details page of the ZooBuilder.
+-Batch runner saves te GA in regular intervals. This allows to monitor the running process and to analyze deeper finished processes.
+-Timeout optimization can be switched on/off
+-TerrainManager is property for batch runner.
+
+v0.22
+-Call webstart does no longer get stuck on win98.
+-Call of webstart is configurable by setting properties in the properties file.
+-Integrated the EasySodaRacer. It allows to run races without calling the original sodaracer.
+-Timout optimization. The timeoutvalue is set to the number of the frames of the fastest model of the previous generation.
+-Batch runner is working
+-All properties moved to one file. (wodka.properties)
+-PropertiesManager allows definition of default properties and automatic creation in the properties file.
+-Batch runner can be configured with properties.
+
+v0.21
+-Integrated a logging (WARN) if the higest fitness of a generation is lower than 
+  the previous higest fitnes. 
+  BUG [857866] best contenders become deleted 
+- Rewising of minor clusters works on model level.
+- Scale models for export.
+- Program length for languages.
+- GA and subinterfaces are configurable now.
+- GlobalSodaParams should be used in AbstractProgram.
+- You can attach a skin to wodka.- Finished coplete redesign of models.(Rewising is much easier now)
+- Introduced the FitnessFunction interface to enable more complex fitness functions in the future.
+- Integrated log4j in wodka.
+- Introduced the Genotype interface which makes it easyer to use other Genotypes then 
+  building languages.
+
+v0.20
+- Runner can be stopped and restarted any time.
+- On export a race with the fastest model is generated.
+- The runner asks for save on exit. Changed functionality in GeneticAlgorithm.s
+- GA has a short name now that is used for save and export. -> Not multiple names for the same ga.
+- Combi results are stored inside wodka home directory
+
+v0.15
+- Models can be tested on the sodaracer.
+
+v0.14
+-fitness in model compare is the sum uf all levels now.
+-Selection policies can be selected now.
+
+v0.13
+-load with bufferd reader.
+-only one Loader in add.
+-busy cursor when loading.
+-saveSmall. Only one member per historypopulation.
+-Save and load with GZip works.
+-Language Turtle gridwidth=5 implemented.
+-Mutation Rate is configurable
+-ModelCompare works with a Squarebuilder
+-New Parameters for CombiRunner.
+-MC-Wheel and MC-Star added
+
+v0.12
+-Applets removed because the caused problems on almost every browser.
+  Webstart seems to be the better solution.
+-Applied grid to turtle.
+-Sodahub API extended for the use of multiple racers.
+-Redesign of the GA. Mainly the creation of a new Instance was extracted.
+-Load/Save wit racers and language in GA is working.
+-New homepagedesign (Pezi).
+-Description for racers and languages.
+-Removed RaceResult because it was never really needed.
+-LangChooser was replaced by LanguageFactory.
+-PoligonBuilder is ready. Implemented poligons: square, pentagon, octagon.
+-Turtle language with PenUp and PenDown.
+-CombiRunner is working.
+-CombiFrame is working.
+-permission in jnlp files to no readwrite. -> easier deployment. save/load disablen.
+

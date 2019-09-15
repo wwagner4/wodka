@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<!-- JNLP File for Sodarace applet -->
+<jnlp spec="1.0+" codebase="http://wodka.sourceforge.net/results1/">
+    <information>
+        <title>Sodarace Application</title>
+        <vendor>Soda Ltd</vendor>
+        <homepage href="http://sodarace.net/race/"/>
+        <description>Race sodaconstructor models</description>
+        <offline-allowed/>
+    </information>
+    <offline-allowed/>
+    <security>
+        <j2ee-application-client-permissions/>
+    </security>
+    <resources>
+        <j2se version="1.4+"/>
+        <jar href="http://www.sodaplay.com/constructor/beta/racer.jar"/>
+        <jar href="http://www.sodaplay.com/constructor/beta/simulator.jar"/>
+        <jar href="http://www.sodaplay.com/constructor/beta/nanoxml.jar"/>
+    </resources>
+    <application-desc main-class="racer/RaceFrame">
+        <argument>http://wodka.sourceforge.net/results1/race_hist_19_201.xml</argument>
+    </application-desc>

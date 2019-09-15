@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir="." default="runBreeder" name="wodka">
+
+	<property name="version" value="0_23" />
+
+	<property name="hpdir" value="build/hp" />
+	<property name="j2h_home" value="d:/pgm/j2h" />
+	<property name="keyfile" value="c:/ssh/id_rsa" />
+	<property name="budir" value="f:/bu" />
+
+	<property name="classesdir" value="classes" />
+	<property name="builddir" value="build" />
+	<property name="buildtest" value="build/test" />
+
+	<target name="clear">
+		<delete quiet="true">
+			<fileset dir="${builddir}" includes="**/*" />
+			<fileset dir="${classesdir}" includes="**/*" />
+			<fileset dir="${hpdir}" includes="**/*" />
+		</delete>
+		<delete quiet="true" dir="${buildtest}" />
+	</target>
+	<path id="cp">
+		<fileset dir="lib">
+			<include name="*.jar" />
+		</fileset>
+		<pathelement path="res" />
+        <pathelement path="classes"/>
+	</path>
+	<target name="compile">
+		<mkdir dir="${classesdir}" />
+		<javac debug="on" destdir="${classesdir}" srcdir="java">
+			<classpath refid="cp" />
+		</javac>
+	</target>
+	<target depends="clear, compile" name="compile_all" />
+	<target depends="compile" name="runAllTest">
+		<java classname="wodka.test.AllWodkaTest" fork="yes">
+			<classpath refid="cp" />
+		</java>
+	</target>
+	<target depends="compile" name="runGenoLab">
+		<java classname="wodka.view.GenoLabFrame" fork="yes">
+			<classpath refid="cp" />
+		</java>
+	</target>
+	<target depends="compile" name="runBreeder">
+		<java classname="wodka.view.BreederFrame" fork="yes">
+			<classpath refid="cp" />
+		</java>
+	</target>
+	<target depends="compile" name="runBatch">
+		<java classname="wodka.batch.BatchRunner">
+			<classpath refid="cp" />
+		</java>
+	</target>
+	<target depends="build" name="build_test">
+		<delete quiet="true" dir="${buildtest}" />
+		<mkdir dir="${buildtest}" />
+		<unzip dest="${buildtest}" overwrite="true" src="${builddir}\wodka_${version}.zip" />
+	</target>
+
+	<target depends="build" name="build_win">
+		<jar jarfile="bin/win/wodkaall.jar">
+			<zipfileset defaultexcludes="yes" dir="res" includes="**/*" />
+			<zipfileset src="lib/xerces.jar" />
+			<zipfileset src="lib/junit.jar" />
+			<zipfileset src="lib/jdom.jar" />
+			<zipfileset src="lib/log4j.jar" />
+			<zipfileset src="lib/javalobby.jar" />
+			<zipfileset src="lib/commons-lang-2.0.jar" />
+			<zipfileset src="lib/easysoda.jar" />
+			<zipfileset src="lib/nanoxml.jar" />
+			<zipfileset src="lib/Mins.jar" />
+			<zipfileset src="lib/wwan-commons-param.jar" />
+			<zipfileset src="${builddir}/wodka.jar" />
+		</jar>
+
+	</target>
+	<target depends="clear, runAllTest, bin" name="build">
+		<mkdir dir="${builddir}" />
+		<zip zipfile="${builddir}/wodka_${version}.zip">
+			<zipfileset defaultexcludes="yes" dir="." includes="**/*" excludes="res/, classes/, gagu/, bin/win/, doc/races/, doc/results1/, **/WEB-INF/, *.iss, **/*.exe, .*, info*.txt" prefix="wodka_${version}" />
+			<zipfileset defaultexcludes="yes" dir="${builddir}" includes="wodka.jar" prefix="wodka_${version}/lib" />
+			<zipfileset defaultexcludes="yes" dir="${builddir}" includes="*.properties" prefix="wodka_${version}" />
+		</zip>
+	</target>
+
+	<target depends="doc" name="docsf">
+		<tar basedir="${hpdir}" tarfile="${builddir}/doc.tar" includes="**/*" excludes="**/*.jar, jd/**/*"  />
+		<gzip src="${builddir}/doc.tar" zipfile="${builddir}/doc.tgz" />
+		<scp file="${builddir}/doc.tgz" keyfile="${keyfile}" passphrase="" todir="wwan@wodka.sourceforge.net:/home/groups/w/wo/wodka/htdocs" trust="true" />
+		<sshexec command="tar -xzf /home/groups/w/wo/wodka/htdocs/doc.tgz -C /home/groups/w/wo/wodka/htdocs" host="wodka.sourceforge.net" keyfile="${keyfile}" trust="true" username="wwan" />
+
+	</target>
+	
+	<target name="test">
+		<tar basedir="${hpdir}" tarfile="${builddir}/doc.tar" includes="**/*" excludes="**/*.jar, jd/**/*"  />
+		<gzip src="${builddir}/doc.tar" zipfile="${builddir}/doc.tgz" />
+	</target>
+
+	<target name="bin" depends="compile" description="Creates the wodka binary">
+		<mkdir dir="${builddir}" />
+		<copy file="res\version.properties" todir="${builddir}" />
+		<replace casesensitive="true" file="${builddir}\version.properties" summary="true" token="${VERSION}" value="${version}" />
+		<jar jarfile="${builddir}/wodka.jar">
+			<fileset dir="${classesdir}">
+				<include name="**/*.class" />
+			</fileset>
+			<fileset dir="res">
+				<include name="**/*" />
+				<exclude name="**/version.properties" />
+			</fileset>
+			<fileset dir="${builddir}">
+				<include name="version.properties" />
+			</fileset>
+		</jar>
+		<delete file="${builddir}/version.properties" />
+	</target>
+
+	<!--possible dependends clear, bin, javadoc, j2h-->
+	<target depends="clear, bin" name="doc">
+		<mkdir dir="${hpdir}" />
+		<exec executable="doc/greenwood.exe" dir="doc/" />
+		<copy file="${builddir}/wodka.jar" todir="${hpdir}" />
+		<copy todir="${hpdir}">
+			<fileset dir="doc/out">
+				<include name="**/*" />
+			</fileset>
+		</copy>
+		<!-- Excluded until next version-->
+		<copy todir="${hpdir}">
+			<fileset dir="lib">
+				<include name="*.jar" />
+			</fileset>
+		</copy>
+		<signjar alias="mykey" storepass="changeit">
+			<fileset dir="${hpdir}">
+				<include name="*.jar" />
+			</fileset>
+		</signjar>
+	</target>
+	<target name="javadoc">
+		<mkdir dir="${hpdir}/jd" />
+		<javadoc defaultexcludes="yes" destdir="${hpdir}/jd" packagenames="wodka.*" sourcepath="java" windowtitle="wodka API">
+			<doctitle>
+				<![CDATA[<h1>wodka</h1>]]></doctitle>
+		<classpath refid="cp" />
+	</javadoc>
+</target>
+<target name="j2h">
+	<mkdir dir="${hpdir}/j2h" />
+	<java fork="true" jar="${j2h_home}/j2h.jar">
+		<arg line="-d ${hpdir}/j2h -jd ${hpdir}/j2h -n wodka" />
+	</java>
+</target>
+<target name="bu">
+	<mkdir dir="${budir}" />
+	<tstamp />
+	<property name="buid" value="wodka_bu_${DSTAMP}_${TSTAMP}" />
+	<zip zipfile="${budir}/${buid}.zip">
+		<zipfileset defaultexcludes="no" dir="." includes="**/*" prefix="${buid}" />
+	</zip>
+</target>
+
+<!--possible dependends clear, bin, javadoc, j2h-->
+<target depends="clear" name="docmini">
+	<mkdir dir="${hpdir}" />
+	<copy todir="${hpdir}">
+		<fileset dir="doc/out">
+			<include name="**/*" />
+		</fileset>
+	</copy>
+	<!-- Excluded until next version-->
+</target>
+</project>

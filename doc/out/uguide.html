@@ -1,0 +1,103 @@
+<html>
+  <head>
+    <title>uguide</title>
+    <link rel="stylesheet" href="greenwood.css" type="text/css" />
+  </head>
+  <body>
+    <div id="div_top_left">
+      <img id="logo" alt="logo" src="logo.png" />
+    </div>
+    <div id="div_top_right">
+      <div id="div_top_right_content">
+        <div id="title">wodka</div>
+        <div id="pagetitle">user guide</div>
+        <table id="table_top_menu">
+          <tr>
+            <td class="top_menu">
+              <a href="index.html">home</a>
+            </td>
+            <td class="top_menu">
+              <a href="installation.html">download / installation</a>
+            </td>
+            <td class="top_menu">
+              <p id="p_top_menu">user guide</p>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div id="div_bottom_left">
+      <table id="table_left_menu">
+        <tr>
+          <td class="left_menu">
+            <a href="#breeding">breeding</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="left_menu">
+            <a href="#genolab">geno lab</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="left_menu">
+            <a href="#batch">batch</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="left_menu">
+            <a href="#zoob">zoo builder</a>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div id="div_bottom_right">
+      <a name="breeding" />
+      <h1>breeding</h1>
+      <p>To breed your own soda models you you have to start the wodka breeder. You may do this by starting the 
+                /bin/breeder.bat file or by using java <a href="Breeder.jnlp">webstart</a>.</p>
+      <p>Click the [i] button to show the details of the current genetic algorithm.</p>
+      <p>Click [new] to generate a new genetic algorithm.</p>
+      <p>You can configure the following components</p>
+      <ul>
+        <li>Genetic algorithm base parameters.</li>
+        <li>Genotype: The genetic representation of your models.</li>
+        <li>Selection Policy: The way how individuals for a new generation are selected.</li>
+        <li>Racer: The program that runs races between the geneticaly generated models to measure their fitness.</li>
+        <li>Fitness Function: </li>
+        <li>Terrain: A terrain for whitch the models should be optimized. There are also some socalled incremental terrains. They get more and more hilly 
+                            as the models master the race in a certain time.</li>
+      </ul>
+      <p>After you have generated a genetic algorithm you may save ([save] button) it in order to
+                load the set of attributes at a later time.</p>
+      <p>Next push the [start] button to begin the breeding process. Make sure that you have 
+                an external racer started if you have choosen it on the racer page. On the breeder you
+                can watch the progress of breeding. After about 50 generations you should get some moving models.</p>
+      <p>If you have any problems please refer to the wodka <a href="http://sourceforge.net/forum/forum.php?forum_id=213078">help forum</a>.</p>
+      <p class="top">
+        <a href="#top">- top -</a>
+      </p>
+      <a name="genolab" />
+      <h1>geno lab</h1>
+      <p>The geno lab application gives you an idea what random models will be generated
+                    for the diffrent genotypes. Start geno lab by clicking /lib/genolab.bat or by using 
+                    <a href="Genolab.jnlp">webstart</a></p>
+      <p class="top">
+        <a href="#top">- top -</a>
+      </p>
+      <a name="batch" />
+      <h1>batch</h1>
+      <p>The wodka batch program is a breeder without GUI. You can use it to breed models systematically. E.g. for 
+                a scientific project. If you want to use wodka batch refer to the <a href="http://sourceforge.net/forum/forum.php?forum_id=213078">help forum</a>.</p>
+      <p class="top">
+        <a href="#top">- top -</a>
+      </p>
+      <a name="zoob" />
+      <h1>zoo builder</h1>
+      <p>The wodka zoo builder prepares the batch results to inspect them. If you want to use it 
+                pease ask at the help forum.</p>
+      <p class="top">
+        <a href="#top">- top -</a>
+      </p>
+    </div>
+  </body>
+</html>

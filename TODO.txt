@@ -1,0 +1,12 @@
+TODO
+
+-Build process must be renwed. Does not work any longer.
+-Introduce a crossover interface that allows diffrent kinds of crossing over. To be used iside Genotype  implementations.
+-Test if and when export fastest does not really take the fastest.
+  BUG [ 860183 ] export fastest does not take the fastest
+-Integrate the Gaga selection policies.
+-Write a Model improve genotype (Evtl. using DoubleValues).
+-Some auto zoobuilder while batch is running. 
+-Dump in the form of a zoobuilder if fitness decreases. It shoudld be possible to switch it off on level change (or any other action that decreases fitness regulary).
+-Redesign of how to get properties. Centralize in one class. Should be done after the installer is finished.
+-Show the number of generations in the breeder.

@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<race racer="racer.Racer">
+    <timeout value="10000" />
+    <terrain filter="racer.FilterFixedBars">
+        <model>
+            <comment />
+            <container width="3000" height="601" />
+            <environment gravity="0.0" friction="0.0" springyness="0.0" />
+            <collisions surface_friction="0.1" surface_reflection="-0.75" />
+            <wave amplitude="0.0" phase="0.0" speed="0.0" />
+            <settings gravitydirection="off" wavedirection="forward" autoreverse="off" />
+            <nodes>
+                <node id="n0" x="-1.0" y="-1.0" />
+                <node id="n1" x="374.0" y="-1.0" />
+                <node id="n2" x="524.0" y="-1.0" />
+                <node id="n3" x="979.0" y="-1.0" />
+                <node id="n4" x="1143.0" y="-1.0" />
+                <node id="n5" x="1390.0" y="2.0" />
+                <node id="n6" x="1828.0" y="8.0" />
+                <node id="n7" x="2466.0" y="-1.0" />
+                <node id="n8" x="-1.0" y="401.0" />
+                <node id="n9" x="-1.0" y="158.0" />
+                <node id="n10" x="79.0" y="194.0" />
+                <node id="n11" x="71.0" y="167.0" />
+                <node id="n12" x="152.0" y="214.0" />
+                <node id="n13" x="145.0" y="191.0" />
+                <node id="n14" x="224.0" y="233.0" />
+                <node id="n15" x="214.0" y="207.0" />
+                <node id="n16" x="292.0" y="250.0" />
+                <node id="n17" x="283.0" y="221.0" />
+                <node id="n18" x="377.0" y="273.0" />
+                <node id="n19" x="365.0" y="236.0" />
+                <node id="n20" x="490.0" y="323.0" />
+                <node id="n21" x="674.0" y="323.0" />
+                <node id="n22" x="809.0" y="401.0" />
+                <node id="n23" x="815.0" y="386.0" />
+                <node id="n24" x="820.0" y="401.0" />
+                <node id="n25" x="825.0" y="386.0" />
+                <node id="n26" x="832.0" y="401.0" />
+                <node id="n27" x="836.0" y="386.0" />
+                <node id="n28" x="842.0" y="401.0" />
+                <node id="n29" x="846.0" y="386.0" />
+                <node id="n30" x="851.0" y="401.0" />
+                <node id="n31" x="856.0" y="386.0" />
+                <node id="n32" x="866.0" y="386.0" />
+                <node id="n33" x="876.0" y="386.0" />
+                <node id="n34" x="886.0" y="386.0" />
+                <node id="n35" x="896.0" y="386.0" />
+                <node id="n36" x="906.0" y="386.0" />
+                <node id="n37" x="916.0" y="386.0" />
+                <node id="n38" x="926.0" y="386.0" />
+                <node id="n39" x="936.0" y="386.0" />
+                <node id="n40" x="946.0" y="386.0" />
+                <node id="n41" x="956.0" y="386.0" />
+                <node id="n42" x="966.0" y="386.0" />
+                <node id="n43" x="976.0" y="386.0" />
+                <node id="n44" x="986.0" y="386.0" />
+                <node id="n45" x="996.0" y="386.0" />
+                <node id="n46" x="862.0" y="401.0" />
+                <node id="n47" x="872.0" y="401.0" />
+                <node id="n48" x="882.0" y="401.0" />
+                <node id="n49" x="891.0" y="401.0" />
+                <node id="n50" x="900.0" y="401.0" />
+                <node id="n51" x="910.0" y="401.0" />
+                <node id="n52" x="920.0" y="401.0" />
+                <node id="n53" x="931.0" y="401.0" />
+                <node id="n54" x="941.0" y="401.0" />
+                <node id="n55" x="951.0" y="401.0" />
+                <node id="n56" x="961.0" y="401.0" />
+                <node id="n57" x="971.0" y="401.0" />
+                <node id="n58" x="981.0" y="401.0" />
+                <node id="n59" x="990.0" y="401.0" />
+                <node id="n60" x="1000.0" y="401.0" />
+                <node id="n61" x="1005.0" y="386.0" />
+                <node id="n62" x="1009.0" y="401.0" />
+                <node id="n63" x="1171.0" y="401.0" />
+                <node id="n64" x="1171.0" y="354.0" />
+                <node id="n65" x="1218.0" y="401.0" />
+                <node id="n66" x="1178.0" y="232.0" />
+                <node id="n67" x="1174.0" y="223.0" />
+                <node id="n68" x="1178.0" y="212.0" />
+                <node id="n69" x="1187.0" y="204.0" />
+                <node id="n70" x="1186.0" y="235.0" />
+                <node id="n71" x="1590.0" y="307.0" />
+                <node id="n72" x="1881.0" y="307.0" />
+                <node id="n73" x="1959.0" y="310.0" />
+                <node id="n74" x="1968.0" y="308.0" />
+                <node id="n75" x="1976.0" y="303.0" />
+                <node id="n76" x="1979.0" y="295.0" />
+                <node id="n77" x="1977.0" y="286.0" />
+                <node id="n78" x="1971.0" y="279.0" />
+                <node id="n79" x="1962.0" y="275.0" />
+                <node id="n80" x="1949.0" y="278.0" />
+                <node id="n81" x="1936.0" y="284.0" />
+                <node id="n82" x="1897.0" y="283.0" />
+                <node id="n83" x="1867.0" y="250.0" />
+                <node id="n84" x="1806.0" y="260.0" />
+                <node id="n85" x="1752.0" y="217.0" />
+                <node id="n86" x="1652.0" y="237.0" />
+                <node id="n87" x="1350.0" y="173.0" />
+                <node id="n88" x="2613.0" y="401.0" />
+                <node id="n89" x="2651.0" y="210.0" />
+                <node id="n90" x="2693.0" y="401.0" />
+                <node id="n91" x="2726.0" y="170.0" />
+                <node id="n92" x="2763.0" y="401.0" />
+                <node id="n93" x="2806.0" y="139.0" />
+                <node id="n94" x="2842.0" y="401.0" />
+                <node id="n95" x="3001.0" y="401.0" />
+                <node id="n96" x="2885.0" y="-1.0" />
+                <node id="n97" x="2972.0" y="-1.0" />
+                <node id="n98" x="3001.0" y="-1.0" />
+                <node id="n99" x="2208.0" y="-1.0" />
+                <node id="n100" x="2379.0" y="-1.0" />
+            </nodes>
+            <links>
+                <fixedbar a="n1" b="n2" />
+                <fixedbar a="n4" b="n5" />
+                <fixedbar a="n8" b="n9" />
+                <fixedbar a="n9" b="n10" />
+                <fixedbar a="n10" b="n11" />
+                <fixedbar a="n11" b="n12" />
+                <fixedbar a="n12" b="n13" />
+                <fixedbar a="n13" b="n14" />
+                <fixedbar a="n14" b="n15" />
+                <fixedbar a="n15" b="n16" />
+                <fixedbar a="n16" b="n17" />
+                <fixedbar a="n17" b="n18" />
+                <fixedbar a="n18" b="n19" />
+                <fixedbar a="n19" b="n20" />
+                <fixedbar a="n20" b="n21" />
+                <fixedbar a="n21" b="n22" />
+                <fixedbar a="n22" b="n23" />
+                <fixedbar a="n23" b="n24" />
+                <fixedbar a="n24" b="n25" />
+                <fixedbar a="n25" b="n26" />
+                <fixedbar a="n26" b="n27" />
+                <fixedbar a="n27" b="n28" />
+                <fixedbar a="n28" b="n29" />
+                <fixedbar a="n29" b="n30" />
+                <fixedbar a="n30" b="n31" />
+                <fixedbar a="n60" b="n45" />
+                <fixedbar a="n45" b="n59" />
+                <fixedbar a="n59" b="n44" />
+                <fixedbar a="n44" b="n58" />
+                <fixedbar a="n58" b="n43" />
+                <fixedbar a="n43" b="n57" />
+                <fixedbar a="n57" b="n42" />
+                <fixedbar a="n42" b="n56" />
+                <fixedbar a="n56" b="n41" />
+                <fixedbar a="n41" b="n55" />
+                <fixedbar a="n55" b="n40" />
+                <fixedbar a="n40" b="n54" />
+                <fixedbar a="n54" b="n39" />
+                <fixedbar a="n39" b="n53" />
+                <fixedbar a="n53" b="n38" />
+                <fixedbar a="n38" b="n52" />
+                <fixedbar a="n52" b="n37" />
+                <fixedbar a="n37" b="n51" />
+                <fixedbar a="n51" b="n36" />
+                <fixedbar a="n36" b="n50" />
+                <fixedbar a="n50" b="n35" />
+                <fixedbar a="n35" b="n49" />
+                <fixedbar a="n49" b="n34" />
+                <fixedbar a="n34" b="n48" />
+                <fixedbar a="n48" b="n33" />
+                <fixedbar a="n33" b="n47" />
+                <fixedbar a="n47" b="n32" />
+                <fixedbar a="n32" b="n46" />
+                <fixedbar a="n46" b="n31" />
+                <fixedbar a="n60" b="n61" />
+                <fixedbar a="n61" b="n62" />
+                <fixedbar a="n62" b="n63" />
+                <fixedbar a="n63" b="n64" />
+                <fixedbar a="n64" b="n65" />
+                <fixedbar a="n66" b="n67" />
+                <fixedbar a="n67" b="n68" />
+                <fixedbar a="n68" b="n69" />
+                <fixedbar a="n66" b="n70" />
+                <fixedbar a="n70" b="n71" />
+                <fixedbar a="n71" b="n72" />
+                <fixedbar a="n72" b="n73" />
+                <fixedbar a="n73" b="n74" />
+                <fixedbar a="n74" b="n75" />
+                <fixedbar a="n75" b="n76" />
+                <fixedbar a="n76" b="n77" />
+                <fixedbar a="n77" b="n78" />
+                <fixedbar a="n78" b="n79" />
+                <fixedbar a="n79" b="n80" />
+                <fixedbar a="n80" b="n81" />
+                <fixedbar a="n81" b="n82" />
+                <fixedbar a="n82" b="n83" />
+                <fixedbar a="n83" b="n84" />
+                <fixedbar a="n84" b="n85" />
+                <fixedbar a="n85" b="n86" />
+                <fixedbar a="n86" b="n87" />
+                <fixedbar a="n87" b="n69" />
+                <fixedbar a="n65" b="n88" />
+                <fixedbar a="n88" b="n89" />
+                <fixedbar a="n89" b="n90" />
+                <fixedbar a="n90" b="n91" />
+                <fixedbar a="n91" b="n92" />
+                <fixedbar a="n92" b="n93" />
+                <fixedbar a="n93" b="n94" />
+                <fixedbar a="n94" b="n95" />
+                <fixedbar a="n7" b="n96" />
+                <fixedbar a="n96" b="n97" />
+                <fixedbar a="n97" b="n98" />
+                <fixedbar a="n3" b="n2" />
+                <fixedbar a="n1" b="n0" />
+                <fixedbar a="n4" b="n3" />
+                <fixedbar a="n99" b="n7" />
+                <fixedbar a="n99" b="n6" />
+                <fixedbar a="n6" b="n5" />
+            </links>
+        </model>
+    </terrain>
+    <race_constraints>
+        <environment gravity="CONTENDER" friction="CONTENDER" springyness="CONTENDER" />
+        <collisions surface_friction="CONTENDER" surface_reflection="CONTENDER" />
+        <wave amplitude="CONTENDER" phase="CONTENDER" speed="CONTENDER" />
+        <settings gravitydirection="CONTENDER" wavedirection="CONTENDER" autoreverse="CONTENDER" />
+    </race_constraints>
+    <contenders filter="racer.FilterScaledSquare">
+        <contender>
+            <model>
+                <comment>wodka gen=9999 pos=1</comment>
+                <container width="651" height="422" />
+                <environment gravity="1" friction="0.354693" springyness="0.355455" />
+                <collisions surface_friction="0.1" surface_reflection="-0.75" />
+                <wave amplitude="0.692413" phase="0.994949" speed="0.05" />
+                <settings gravitydirection="down" wavedirection="forward" autoreverse="on" />
+                <nodes>
+                    <mass id="m0" x="130" y="130" vx="0" vy="0" />
+                    <mass id="m1" x="130" y="104" vx="0" vy="0" />
+                    <mass id="m4" x="130" y="156" vx="0" vy="0" />
+                    <mass id="m6" x="130" y="130" vx="0" vy="0" />
+                    <mass id="m7" x="78" y="156" vx="0" vy="0" />
+                    <mass id="m8" x="78" y="130" vx="0" vy="0" />
+                    <mass id="m10" x="104" y="130" vx="0" vy="0" />
+                    <mass id="m12" x="104" y="130" vx="0" vy="0" />
+                    <mass id="m16" x="104" y="104" vx="0" vy="0" />
+                    <mass id="m18" x="104" y="104" vx="0" vy="0" />
+                    <mass id="m22" x="104" y="182" vx="0" vy="0" />
+                </nodes>
+                <links>
+                    <muscle amplitude="0.817349" phase="0.742791" a="m0" b="m1" restlength="26" />
+                    <muscle amplitude="0.754433" phase="0.271375" a="m1" b="m0" restlength="26" />
+                    <muscle amplitude="0.99902" phase="0.223892" a="m0" b="m4" restlength="26" />
+                    <muscle amplitude="0.591445" phase="0.232746" a="m4" b="m0" restlength="26" />
+                    <muscle amplitude="0.84914" phase="0.03422" a="m0" b="m6" restlength="0" />
+                    <muscle amplitude="0.396896" phase="0.869838" a="m6" b="m7" restlength="58.137767" />
+                    <muscle amplitude="0.923226" phase="0.905851" a="m7" b="m8" restlength="26" />
+                    <muscle amplitude="0.994279" phase="0.874693" a="m8" b="m10" restlength="26" />
+                    <muscle amplitude="0.424918" phase="0.372419" a="m10" b="m12" restlength="0" />
+                    <muscle amplitude="0.615697" phase="0.218756" a="m12" b="m0" restlength="26" />
+                    <muscle amplitude="0.671393" phase="0.10162" a="m0" b="m10" restlength="26" />
+                    <muscle amplitude="0.989161" phase="0.997816" a="m12" b="m16" restlength="26" />
+                    <muscle amplitude="0.984864" phase="0.2214" a="m16" b="m18" restlength="0" />
+                    <muscle amplitude="0.874854" phase="0.407149" a="m18" b="m16" restlength="0" />
+                    <muscle amplitude="0.753554" phase="0.796187" a="m16" b="m0" restlength="36.769553" />
+                    <muscle amplitude="0.512622" phase="0.322378" a="m6" b="m22" restlength="58.137767" />
+                </links>
+            </model>
+            <result frames="-1.0" />
+        </contender>
+    </contenders>
+</race>
+

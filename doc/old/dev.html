@@ -1,0 +1,171 @@
+
+<html>
+    <head>
+        <title>wodka development</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+    </head>
+    <body>
+        <table width="98%">
+            <tr>
+                <td class="title" background="images/flascherl_verfl_over.jpg">
+                    <img src="images/flascherl_verfl_over.jpg" align="middle"/>&nbsp;development</td>
+            </tr>
+        </table>
+        <table width="98%">
+            <tr>
+                <td>
+                    <a href="index.html#top">home</a>
+                </td>
+                <td>
+                    <a href="doc.html#top">documentation</a>
+                </td>
+                <td>
+                    <a href="dev.html#top">development</a>
+                </td>
+                <td>
+                    <a href="results.html#top">results</a>
+                </td>
+            </tr>
+        </table>
+        <table width="98%">
+            <tr>
+                <td valign="top" class="title">
+                    <table>
+                        <tr>
+                            <td>
+                                <a href="dev.html#main">main page (sf)</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="dev.html#developers-forum">developers forum</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="dev.html#bugs">bugs</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="dev.html#tasks">tasks</a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table>
+                        <tr>
+                            <td>
+                                <a name="main"></a>
+                                <h1>main page</h1>
+                                <p>
+                                    <a href="http://sourceforge.net/projects/wodka/">Click here</a> 
+                        to get all relevant information concerning the wodka development.</p>
+
+                                <h2>about CVS</h2>
+                                <P>CVS (Concurrent Versions System) is a tool used by many software developers to manage changes within their source code tree.  
+                    CVS provides the means to store not only the current version of a piece of source code, but a record of all changes 
+                    (and who made those changes) that have occurred to that source code.  Use of CVS is particularly common on 
+                    projects with multiple developers, since CVS ensures changes made by one developer are not accidentally removed
+                    when another developer posts their changes to the source tree.</P>
+                                <P>In order to access a CVS repository, you must install a special piece of software called a CVS client; 
+                    CVS clients are available for most any operating system.</P>
+
+                                <h2>WinCvs</h2>
+                                <p>
+                        If you want to use WinCvs on a win32 platform see the excellent documentation on sourceforge: 
+                        <a href="http://sourceforge.net/docman/display_doc.php?docid=766&group_id=1">WinCvs CVS Client Installation Instructions</a>
+                                </p>
+
+                                <h2>anonymous CVS access</h2>
+                                <P>This project's SourceForge.net CVS repository can be checked out through anonymous (pserver) CVS with the following 
+                    instruction set. The module you wish to check out must be specified as the <I>module name</I>. 
+                    When prompted for a password for <I>anonymous</I>, simply press the Enter key.  To determine the names of the modules 
+                    created by this project, you may examine their CVS repository via the provided 
+                    <A href="http://cvs.sourceforge.net/viewcvs.py/wodka">web-based CVS repository viewer</A>.</P>
+                                <P>
+                                    <tt>cvs -d:pserver:anonymous@cvs.sourceforge.net:/cvsroot/wodka login</tt>
+                                </P>
+                                <p>
+                                    <tt>cvs -z3 -d:pserver:anonymous@cvs.sourceforge.net:/cvsroot/wodka co src</tt>
+                                </P>
+                                <P>Updates from within the module's directory do not need the -d parameter.</P>
+                                <p>
+                                    <B>NOTE:</B> UNIX file and directory names are case sensitive.  The path to the project CVSROOT must be specified using 
+                        lowercase characters (i.e. /cvsroot/wodka)
+                        </p>
+
+                                <h2>developer CVS access via SSH</h2>
+                                <P>Only project developers can access the CVS tree via this method. A SSH client must
+                        be installed on your client machine. Substitute <I>module name</I> and
+                        <I>developername</I> with the proper values. Enter your site password when
+                        prompted.</P>
+                                <P>
+                                    <tt>export CVS_RSH=ssh</tt>
+                                </P>
+                                <p>
+                                    <tt>cvs -z3 -d:ext:<I>developername</I>@cvs.sourceforge.net:/cvsroot/wodka co src</tt>
+                                </p>
+                                <P>
+                                    <B>NOTE:</B> UNIX file and directory names are case sensitive.  The path to the project CVSROOT must be specified 
+                            using lowercase characters (i.e. /cvsroot/wodka)</P>
+                                <p>&nbsp;</p>
+                                <a href="#top">top</a>
+                            </td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <td>
+                                <a name="developers-forum"></a>
+                                <h1>developers forum</h1>
+                                <p>
+                                    <a href="http://sourceforge.net/forum/forum.php?forum_id=213079">Click here</a> if you are a wodka developer and want to discuss a development issue.</p>
+                                <p>&nbsp;</p>
+                                <a href="#top">top</a>
+                            </td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <td>
+                                <a name="bugs"></a>
+                                <h1>bugs</h1>
+                                <p>If you find any error in wodka, <a href="http://sourceforge.net/tracker/?func=add&group_id=63128&atid=502928">click here</a> 
+                        to report it.</p>
+                                <p> If possible include a short description and a test case
+                        to reproduce the error.</p>
+			<!-- 
+                        <p> If possible include a short description, a test case
+                        to reproduce the error and the log file. The log file can be found in $wodka_home/log. $wodka_home is
+                        named 'wodka' and located in your home directory ($home/wodka).</p>
+                        -->
+                                <p>&nbsp;</p>
+                                <a href="#top">top</a>
+                            </td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <td>
+                                <a name="tasks"></a>
+                                <h1>tasks</h1>
+                                <p>If you have an idea how to improve wodka submit a new task.</p>
+                                <p>
+                                    <a href="http://sourceforge.net/pm/task.php?group_id=63128&group_project_id=23381&func=browse&set=open">
+                            Click here</a> to view a list of the currently open tasks</p>
+                                <p>
+                                    <a href="http://sourceforge.net/pm/task.php?group_id=63128&group_project_id=23381&func=addtask">
+                            Click here</a> to submit a new task.</p>
+                                <p>&nbsp;</p>
+                                <a href="#top">top</a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
